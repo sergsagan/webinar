@@ -32,7 +32,7 @@ var src = {
         js: ['./src/js/**/*.js'],
         sass: ['./src/sass/main.{scss,sass}'],
         images: ['./src/img/**/*.*', './src/sass/img/*.svg', '!./src/img/icons/sprites/*.png', '!./src/img/icons/sprites/*.svg'],
-        sprite: ['./src/img/icons/*.png'],
+        sprites: ['./src/img/icons/sprites/*.png'],
         svgsprite: ['./src/img/icons/sprites/*.svg'],
         fonts: ['./src/fonts/**/*.*'],
         html: ['./src/*.html']
@@ -199,7 +199,7 @@ gulp.task('images', function() {
 
 //SVG-sprite
 
-gulp.task('svgsprite', function() {
+/*gulp.task('svgsprite', function() {
     return gulp.src(src.svgsprite)
         .pipe(svgSprite(config = {
             preview: false,
@@ -220,7 +220,7 @@ gulp.task('svgsprite', function() {
 
 gulp.task('svgsprite-clean', function (cb) {
     del(['./src/sass/img/sprite.svg','./src/sass/_svgsprite.scss'], cb);
-});
+});*/
 
 // ~ Sprite png ~
 
